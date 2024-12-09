@@ -70,7 +70,8 @@ export const ApplicationForm = () => {
 			if (countdown) clearInterval(countdown)
 			if (timeout) clearTimeout(timeout)
 		}
-	}, [formState.isSubmitSuccessful])
+	}, [formState.isSubmitSuccessful, reset, serverError])
+
 
 	return (
 		<>

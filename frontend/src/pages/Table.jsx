@@ -19,7 +19,7 @@ export const Table = () => {
 			.then(data => {
 				setUserLogin(data.email)
 			})
-	}, [])
+	}, [navigate])
 
 	if (!userLogin) return null
 
